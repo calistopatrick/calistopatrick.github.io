@@ -29,6 +29,13 @@ img {
   max-width: 4ch;
 }
 
+/* webchat*/
+
+.df-messenger {
+  --df-messenger-bot-message: #ffffff;
+}
+
+/*fim webchat*/
 @media (max-width: 800px) {
   .subtitulo {
     font-size: 3rem;

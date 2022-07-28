@@ -5,12 +5,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <meta name="description" content="Portifólio - Patrick Calisto">
   <link rel="stylesheet" href="./css/style.min.css">
   <link rel="icon" type="image/svg+xml" href="./img/marca.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=B612&family=Fira+Sans&family=Inter:wght@200&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <style>
+    df-messenger {
+      --df-messenger-bot-message: #878fac;
+      --df-messenger-button-titlebar-color: #42b877;
+      --df-messenger-chat-background-color: #fafafa;
+      --df-messenger-font-color: white;
+      --df-messenger-send-icon: #878fac;
+      --df-messenger-user-message: #479b3d;
+    }
+  </style>
   <title>Portifólio - Patrick Calisto</title>
 </head>
 
@@ -137,10 +148,10 @@
       </ul>
       <p class="footer-copy">Calisto. Direitos reservados</p>
     </div>
-    <div id="webchat" data-chat-token="0742b7e9-d7a5-42c1-b5f8-969e8eb40dfe" data-chat-theme="green">
-      <div id="webchat-app"></div>
-    </div>
-    <script src="https://sirius.bemoby.com/webchat/webchat.js"></script>
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger intent="WELCOME" chat-title="Calisto Robot 🤖" agent-id="4c24b91b-f344-4cbc-9514-d6c2f6386d19" language-code="pt-br" wait-open="false" chat-icon="https://icons.iconarchive.com/icons/google/noto-emoji-people-expressions/32/11094-man-raising-hand-light-skin-tone-icon.png"></df-messenger>
+    <script src="javascript.js"></script>
 
   </footer>
 </body>
