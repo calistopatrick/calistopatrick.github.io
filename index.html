@@ -148,11 +148,17 @@
       </ul>
       <p class="footer-copy">Calisto. Direitos reservados</p>
       <!-- Chatbot Whatsapp-->
-      <div id="webchat" data-chat-token="dfabfaf5-7207-4a52-ab69-e4ddf9821e19" data-chat-theme="green">
-        <div id="webchat-app"></div>
-    </div>
-    <script src="https://sirius.bemoby.com/webchat/webchat.js"></script>
-
+  
+      <!-- script necessario para configurar tamanho do chatbot -->
+<script src="https://medsenior-lgpd.intellibot.com.br/styledChatSize.js"></script>
+<!-- iframe do chatbot -->
+<iframe style="
+  position: fixed;
+  border: none;
+  right: 90px;
+  bottom: 20px;
+  z-index: 99999999999;"  
+  id="intelliframe" src="https://medsenior-lgpd.intellibot.com.br/iframe" onload="sendScreenSize()" allowfullscreen></iframe>
   </footer>
 
 
